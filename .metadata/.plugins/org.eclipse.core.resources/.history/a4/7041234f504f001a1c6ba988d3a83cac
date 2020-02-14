@@ -1,0 +1,14 @@
+package lv.olga.paysystem;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class PaymentSystem {
+	
+	private List<Payee> payees;
+	
+	public PaymentSystem() {
+		payees = new ArrayList<>();
+	}
+	
+}

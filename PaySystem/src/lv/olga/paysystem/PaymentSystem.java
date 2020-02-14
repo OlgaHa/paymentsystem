@@ -1,0 +1,29 @@
+package lv.olga.paysystem;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class PaymentSystem {
+	
+	private List<Payee> payees;
+	
+	public PaymentSystem() {
+		payees = new ArrayList<>();
+	}
+	
+	public void addPayee(Payee payee) {
+		if(!payees.contains(payee)) {
+			payees.add(payee);
+		}
+	}
+	
+	public void processPayments() {
+		for (Payee payee : payees){
+			Double prossPayment = payee.grossPayment();
+			System.out.println("Paying to "+ payee.name());
+			System.out.println("Grosst "+ prossPayment);
+			System.out.println("Transfered to Account:  "+ payee.bankAccount());
+		}
+	}
+	
+}
