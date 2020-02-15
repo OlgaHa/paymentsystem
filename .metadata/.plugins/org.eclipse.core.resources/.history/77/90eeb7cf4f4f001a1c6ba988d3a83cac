@@ -1,9 +1,0 @@
-package lv.olga.paysystem;
-
-import java.util.List;
-
-public class PaymentSystem {
-	
-	private List<Payee> payees;
-	
-}

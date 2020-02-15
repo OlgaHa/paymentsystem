@@ -1,0 +1,18 @@
+package lv.olga.test;
+
+import lv.olga.employee.ComissionEmployee;
+import lv.olga.paysystem.PaymentSystem;
+
+public class TestPayment {
+
+
+	public static void main(String[] args) {
+		
+		PaymentSystem paymentSystem = new PaymentSystem(); 
+		
+		ComissionEmployee tom = new ComissionEmployee("Tom Jerk", 1010101, 5000); 
+		
+		
+	}
+
+}

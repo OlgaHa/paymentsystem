@@ -5,7 +5,7 @@ import java.util.List;
 
 public class PaymentSystem {
 	
-	private List<Payee> payees;
+	public List<Payee> payees;
 	
 	public PaymentSystem() {
 		payees = new ArrayList<>();
@@ -19,9 +19,9 @@ public class PaymentSystem {
 	
 	public void processPayments() {
 		for (Payee payee : payees){
-			Double prossPayment = payee.grossPayment();
+			Double grossPayment = payee.grossPayment();
 			System.out.println("Paying to "+ payee.name());
-			System.out.println("Grosst "+ prossPayment);
+			System.out.println("Grosst "+ String.format("%1$.2f", grossPayment));// "%1$.2f" a format only 
 			System.out.println("Transfered to Account:  "+ payee.bankAccount());
 		}
 	}

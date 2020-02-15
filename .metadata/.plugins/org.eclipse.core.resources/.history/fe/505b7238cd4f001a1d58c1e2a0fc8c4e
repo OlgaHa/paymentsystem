@@ -1,0 +1,38 @@
+package lv.olga.employee;
+
+import lv.olga.paysystem.Payee;
+
+public class ComissionEmployee implements Payee {
+
+	private String name;
+	private Integer bankAccount;
+	protected Double grossWage;
+	private Double grossComission = 0.0;
+
+	public ComissionEmployee(String name, Integer bankAccount, Double grossWage) {
+		this.name = name;
+		this.bankAccount = bankAccount;
+		this.grossWage = grossWage;
+	}
+
+	@Override
+	public String name() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Double grossPayment() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Integer bankAccount() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+
+}

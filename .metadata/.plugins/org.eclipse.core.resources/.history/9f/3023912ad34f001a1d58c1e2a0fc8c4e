@@ -1,0 +1,15 @@
+package lv.olga.test;
+
+import lv.olga.paysystem.PaymentSystem;
+
+public class TestPayment {
+
+
+	public static void main(String[] args) {
+		
+		PaymentSystem paymentSystem = new PaymentSystem(); 
+		
+		
+	}
+
+}

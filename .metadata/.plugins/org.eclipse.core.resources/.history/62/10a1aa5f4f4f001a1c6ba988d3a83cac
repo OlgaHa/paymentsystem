@@ -1,5 +1,0 @@
-package lv.olga.paysystem;
-
-public interface Payee {
-
-}
